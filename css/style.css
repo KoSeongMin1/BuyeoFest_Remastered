@@ -1,0 +1,267 @@
+@charset "UTF-8";
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "맑은 고딕";
+    list-style: none;
+    color: #222328;
+}
+a{
+    text-decoration: none;
+    color: inherit;
+}
+.wrapper{
+    width: 1000px;
+    height: 650px;
+    float: left;
+}
+.clear{
+    clear: both;
+    position: inherit;
+}
+button{
+    border: none;
+    cursor: pointer;
+}
+
+
+
+.logo{
+    width: 260px;
+    padding: 30px 0px;
+    text-align: center;
+}
+header{
+    width: 260px;
+    height: 650px;
+    background-color: #ffe9f7;
+    text-align: center;
+    position: absolute;
+}
+nav{
+    width: 200px;
+    margin: 0 auto;
+}
+.mainmenu>li{
+    font-size: 20px;
+    padding: 10px 0px;
+    transition: all 0.4s;
+    font-weight: 700;
+}
+.mainmenu>li:hover{
+    background-color: #ff16b1;
+    color: #ffffff;
+}
+.submenu{
+    margin: 10px 0px -10px 0px;
+    display: none;
+}
+.submenu>li{
+    background-color: #facceb;
+    font-size: 17px;
+    padding: 10px 0px;
+    transition: all 0.4s;
+    font-weight: 400;
+}
+.submenu>li:hover{
+    background-color: #f16fc6;
+}
+
+
+
+.wrap{
+    width: 740px;
+    float: right;
+    position: relative;
+}
+#imgslide{
+    width: 100%;
+    height: 350px;
+}
+.slide img{
+    position: absolute;
+}
+.slide1{
+    animation: slide1 9s infinite;
+}
+.slide2{
+    animation: slide2 9s infinite;
+}
+.slide3{
+    animation: slide3 9s infinite;
+}
+@keyframes slide1{
+    0%{opacity: 1}
+    33%{opacity: 0}
+    66%{opacity: 0}
+    100%{opacity: 1}
+}
+@keyframes slide2{
+    0%{opacity: 0}
+    33%{opacity: 1}
+    66%{opacity: 0}
+    100%{opacity: 0}
+}
+@keyframes slide3{
+    0%{opacity: 0}
+    33%{opacity: 0}
+    66%{opacity: 1}
+    100%{opacity: 0}
+}
+
+
+
+#contents{
+    height: 200px;
+}
+#contents h2{
+    background-color: #ff57c7;
+    text-align: center;
+    padding: 5px;
+}
+#noticeDIV{
+    width: 280px;
+    height: 200px;
+    display: inline-block;
+    float: left;
+    position: relative;
+}
+#notice{
+    width: 100%;
+    height: 160px;
+    font-size: 0.8em;
+}
+#notice tr:nth-child(2n-1){
+    background-color: #ffffff;
+}
+#notice tr:nth-child(2n){
+    background-color: #facceb;
+}
+.date{
+    float: right;
+}
+#galleryDIV{
+    width: 260px;
+    height: 200px;
+    display: inline-block;
+    float: left;
+    position: relative;
+}
+#gallery{
+    width: 100%;
+    height: 160px;
+}
+#gallery img{
+    width: 33.33%;
+    float: left;
+    margin-top: 24px;
+}
+
+
+
+#barogagi{
+    width: 200px;
+    height: 200px;
+    display: inline-block;
+    float: left;
+    font-size: 0;
+}
+
+
+
+footer{
+    background-color: #ff57c7;
+    height: 100px;
+}
+.footertext{
+    float: left;
+    width: 480px;
+}
+.footermenu>li{
+    float: left;
+    width: 33.333%;
+    text-align: center;
+    margin-top: 10px;
+    height: 40px;
+    line-height: 40px;
+}
+.copyright{
+    float: left;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 10px;
+    height: 40px;
+    line-height: 40px;
+}
+.snsNfamilysite{
+    width: 260px;
+    height: 100px;
+    float: right;
+}
+.sns{
+    padding: 0px 30px;
+}
+.sns img{
+    width: 55px;
+    height: 55px;
+    margin: 5px;
+    float: left;
+}
+.familysite{
+    height: 40px;
+}
+.familysite select{
+    width: 180px;
+    margin-left: 15px;
+}
+.familysite button{
+    width: 40px;
+    height: 20px;
+    background-color: #ffe9f7;
+    border-radius: 5px;
+}
+
+
+
+#modal{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    display: none;
+    background-color: rgba(0,0,0,0.5);
+}
+#modalbody{
+    width: 500px;
+    height: 300px;
+    background-color: #ffffff;
+    margin-top: 175px;
+    margin-left: 250px;
+    border: 1px solid #000000;
+}
+#modalbody>h2{
+    height: 50px;
+    line-height: 50px;
+    padding-left: 20px;
+    background-color: #ff57c7;
+    border-bottom: 1px solid #000000;
+}
+#modalbody>P{
+    padding: 20px;
+}
+.modalbutton{
+    padding: 5px;
+    font-size: 18px;
+    border-radius: 10px;
+    width: 100px;
+    background-color: #e30097;
+    color: #ffffff;
+    font-weight: 700;
+    float: right;
+    margin-right: 20px;
+    border: 1px solid #e30097;
+}
+.modalbutton:hover{
+    background-color: #ffffff;
+    color: #e30097;
+}
